@@ -15,3 +15,8 @@ def test_read_main():
 def test_read_main_json():
     response = client.get("/")    
     assert response.json() == {"message": "Hello World"}
+
+
+def test_size_products_list():
+    response = client.get("/")    
+    assert len(response.json()) == 1
