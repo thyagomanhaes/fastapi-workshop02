@@ -12,11 +12,16 @@ poetry shell
 poetry add fastapi uvicorn
 ```
 
-Para automação de atividades
+For tasks automations on terminal:
 ```
 poetry add taskipy
 ```
 
+For unit tests:
 ```
 poetry add pytest
+```
+
+```
+poetry add httpx
 ```

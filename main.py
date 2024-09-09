@@ -8,6 +8,11 @@ products: List[Dict[str, any]] = [
         "id": 1, 
         "name": "Notebook",   
         "price": 1000.00
+    },
+    {
+        "id": 2, 
+        "name": "Notebook Gamer",   
+        "price": 1000.00
     }
 ]
 
@@ -16,6 +21,6 @@ async def root():
     return {"message": "Hello World"}
 
 
-@app.get("/product")
+@app.get("/products")
 async def get_products():
     return products

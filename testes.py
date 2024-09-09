@@ -18,5 +18,5 @@ def test_read_main_json():
 
 
 def test_size_products_list():
-    response = client.get("/")    
-    assert len(response.json()) == 1
+    response = client.get("/products")    
+    assert len(response.json()) == 2
